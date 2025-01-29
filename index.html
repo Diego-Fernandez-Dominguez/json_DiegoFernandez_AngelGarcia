@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futbolisimos</title>
-</head>
-<body>
-
     <style>
         body{
             background-color: lightblue;
@@ -37,23 +34,22 @@
             transition: 3s;
         }
         #envio:hover{
-        background-color: blue;
+            background-color: blue;
         }
-    
     </style>
-        <header>
-            <h1 id="titulo">Bienvenido a la pagina de busqueda de los equipos</h1>
-        </header>
-               
-    
-    
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo">Bienvenido a la página de búsqueda de los equipos</h1>
+    </header>
+
     <h1>Información del Equipo de Fútbol</h1>
     <input type="text" id="nombre" placeholder="Ingresa el nombre del equipo">
     <button id="envio" onclick="solicitud()">Buscar</button>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
-
         function solicitud() {
             const nombreEquipo = document.getElementById('nombre').value.trim();
 
@@ -84,6 +80,7 @@
             console.log("Descripción:", equipo.strDescriptionEN);
         }
     </script>
+
     <footer>
         <p>Realizado por Diego Fernandez Dominguez y Ángel García Guillena</p>
     </footer>
